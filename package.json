@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run dev --prefix ./client",
-    "server": "node --watch server.js",
+    "server": "nodemon server.js",
     "both": "concurrently \"npm run start\" \"npm run server\""
   },
   "keywords": [],
@@ -21,6 +21,7 @@
     "express": "^4.19.2",
     "mongodb": "^6.5.0",
     "mongodb-connection-string-url": "^3.0.0",
-    "mongoose": "^8.3.0"
+    "mongoose": "^8.3.0",
+    "nodemon": "^3.1.0"
   }
 }
