@@ -62,7 +62,8 @@ app.delete('/api/passwords', async (req, res) => {
 app.use(
     cors({
         "origin": "*"
-    }))
+    })
+)
 
 app.listen(port, () => {
     console.log(`Example app listening on port http://localhost:${port}`);
