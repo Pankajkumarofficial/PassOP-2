@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url); // Get current filename
 const __dirname = path.dirname(__filename); // Get current dirname
 
 const app = express();
-const port = 8080;
+const port = 8000;
 
 dotenv.config();
 
