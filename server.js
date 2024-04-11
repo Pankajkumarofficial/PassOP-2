@@ -55,9 +55,14 @@ app.delete('/api/passwords', async (req, res) => {
     res.send({ success: true, result: findResult });
 });
 
-app.get('*', function (res, req) {
-    res.sendFile(path.join(__dirname, './client/dist/index.html'));
-})
+// app.get('*', function (res, req) {
+//     res.sendFile(path.join(__dirname, './client/dist/index.html'));
+// })
+
+app.use(
+    cors({
+        "origin": "*"
+    }))
 
 app.listen(port, () => {
     console.log(`Example app listening on port http://localhost:${port}`);
